@@ -26,12 +26,12 @@ def compute_height(n, parents):
 
 def main():
     # implement input form keyboard and from files
-    parbaude = input()
+    parbaude = input().strip()
     if parbaude == "I":
-        node_sk = int(input())
+        node_sk = int(input().strip())
         parents = np.array(list(map(int, input().split())))
     else:
-        vieta = input()
+        vieta = input().strip()
         if "a" in vieta:
             print("Nepareiza ievade")
             return
