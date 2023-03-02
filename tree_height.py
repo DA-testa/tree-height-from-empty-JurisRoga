@@ -35,7 +35,7 @@ def main():
         if "a" in vieta:
             print("Nepareiza ievade")
             return
-        with open(vieta, mode = "r") as fails:
+        with open(vieta) as fails:
             node_sk = int(fails.readline())
             parents = np.array(list(map(int, fails.readline().split())))
     height = compute_height(node_sk, parents)
